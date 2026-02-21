@@ -1,6 +1,6 @@
 # 🏠 Welcome to Migraine Tracker
 
-Living with chronic migraines can feel unpredictable. **Migraine Tracker** is an open-source platform built to help users reclaim their peace of mind by finding hidden patterns between their daily lives, weather shifts, and solar activity.
+Living with chronic migraines can feel unpredictable. [**Migraine Tracker**](https://migrane-tracker-dashboard.sliplane.app) is an open-source platform built to help users reclaim their peace of mind by finding hidden patterns between their daily lives, weather shifts, and solar activity.
 
 This documentation serves as the central hub for everything related to the Migraine Tracker ecosystem.
 
