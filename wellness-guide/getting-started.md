@@ -7,7 +7,13 @@ Here is how to begin your journey with Migraine Tracker.
 ## Step 1: Access Your Safe Space
 Head over to your new wellness dashboard: **[Migraine Tracker Live App](https://migrane-tracker-dashboard.sliplane.app)**
 
-When you arrive, you will be prompted to create a secure account. Because you are logging sensitive health data, your privacy is our top priority. Your personal logs are strictly encrypted and visible only to you.
+When you arrive, you will be prompted to create a secure account. Because you are logging sensitive health data, your privacy is our top priority. 
+
+To make joining as effortless as possible (especially if you are dealing with a migraine!), we offer secure, one-click sign-in options:
+* **Sign in with Google (Gmail)**
+* **Sign in with GitHub**
+
+*Note: Using these providers means we never see or store your password, and your personal logs remain strictly encrypted and visible only to you.*
 
 ## Step 2: Log Your First "Health Day"
 We recommend starting small. You don't need to have a migraine to start using the app! In fact, logging your "good days" is just as important.
