@@ -2,6 +2,7 @@
 
 * [🏠 Introduction](README.md)
   * [System Architecture Overview](introduction/architecture-overview.md)
+* [📋 Changelog](Changelog.md)
 
 ## 🌱 The Wellness Guide (User-Facing)
 * [Getting Started on Your Journey](wellness-guide/getting-started.md)
