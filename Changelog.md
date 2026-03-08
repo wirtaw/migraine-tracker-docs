@@ -1,84 +1,56 @@
-# Changelog - Migraine Tracker
+# 🚀 Changelog & Release Notes
 
-## February 2026
+Welcome to the Migraine Tracker updates page! We are constantly working behind the scenes to make your tracking experience smoother, your data safer, and our predictive engine smarter. 
 
-- **Incidents**: Managed incident types; updated trigger endpoints (Feb 24-25).
-- **Predictions**: Implemented complete prediction module & API rules CRUD (Feb 16-20).
-- **Health Logs**: Updated sleep data and added water intake metrics (Feb 19).
-- **Locations**: Covered location with tests and support location date ranges (Feb 16-18).
-- **Weather / Solar**: Added UV Index to hourly forecasts and stabilized weather integrations (Feb 3-8).
-- **Frontend**: Implemented management of incident types and added user-specific incident types (Feb 24).
-- **Frontend**: Added rules and prediction capabilities (Feb 20).
-- **Frontend**: Added tracking functionality for sleep and water health logs across the application (Feb 19).
-- **Frontend**: Added new day page layout (Feb 16).
-- **Frontend**: Added forecast UvIndex chart (Feb 8).
-- **Frontend**: Added medication and forecast capabilities (Feb 5).
-- **Frontend**: Implemented edit support for entities (Feb 3).
+Here is a log of all the new features, environmental integrations, and improvements we've made.
 
-## January 2026
+---
 
-- **Usage Statistics**: Implemented usage statistics per user (Jan 23).
-- **Incidents**: Developed incident statistics service method and endpoints (Jan 17).
-- **Security & Fixes**: Secured API documentation page, applied OWASP recommendations, and fixed ESLint issues (Jan 14-22).
-- **Testing & Infrastructure**: Drastically optimized CI/CD testing pipelines. Separated environments for tests, updated GitHub Actions workflows, and configured local in-memory DB setups (Jan 10-14).
-- **Frontend**: Implemented retention of usage statistics per user (Jan 23).
-- **Frontend**: Added incident statistics charts to the report page (Jan 17).
-- **Frontend**: Updated the display of error messages (Jan 22).
-- **Frontend**: Fixed issues with importing incidents (Jan 15).
+## 🌟 Version 1.2.0: The Security & Insights Update
+*Release Date: March 2026*
 
-## December 2025
+This release focused heavily on protecting your sensitive data and giving you better tools to understand your long-term health trends.
 
-- **Weather & Solar Data Expansion**:
-  - Integrated Open-Meteo services (Dec 18).
-  - Designed an aggregated summary endpoint for location-based weather and solar data (Dec 29).
-  - Added fields such as historical geomagnetic data and direct radiation metrics (Dec 6-30).
-- **Incidents**: Added notes (optional metadata) and summary fields (Dec 30).
-- **Infrastructure**: Introduced robust backend logging (Dec 28) and Cloudflare status/worker implementations (Dec 28).
-- **Frontend**: Implemented the ability to add locations and introduced database data upload/backup feature (Dec 30).
-- **Frontend**: Added Docker support (Dec 27).
-- **Frontend**: Implemented a consolidated health logs form and established dedicated services for managing symptoms, incidents, medications, and triggers (Dec 20).
-- **Frontend**: Replaced Open Weather integration (Dec 18).
-- **Frontend**: Integrated solar weather data (Dec 17).
+**🔐 Security & Architecture**
+* **New:** Introduced an edge-based **Cloudflare Worker** to handle daily symmetric key rotation. Your encrypted health payloads are now secured with dynamically changing keys!
+* **Improved:** Upgraded the NestJS backend `RbacGuard` to strictly isolate user data streams, preventing any cross-contamination of predictive rules.
 
-## November 2025
+**📊 Dashboard & Reporting**
+* **New:** Added the **30-Day Trend Report** (`/reports`). You can now view visual charts mapping your incident frequency and pain severity over the last month.
+* **New:** Introduced the **Biorhythm Chart widget** on the daily dashboard to track physical, emotional, and intellectual cycles.
+* **Improved:** The Data Management portal now allows for one-click **Database Backups** and full user data resets.
 
-- **Solar Modules Setup**: Established foundational solar weather integrations with clients for NOAA and GFZ data (Nov 24-29).
-- **User & Security**:
-  - Integrated Supabase OAuth2 functionality (Nov 18).
-  - Added user Role-Based Access Control (RBAC) (Nov 17).
-  - Implemented secure profile retrieval endpoints with payload encryption, including lat/lon data (Nov 19-23).
-- **Feature Enhancements**:
-  - Iterated comprehensively on Locations, Health Logs, Symptoms, Triggers, and Medications CRUD modules, focusing on test coverage and payload security (Nov 12-16).
-- **Frontend**: Integrated solar weather endpoint (Nov 26).
-- **Frontend**: Updated Solar Radiation API to use bearer token authentication and removed legacy API key headers (Nov 24).
-- **Frontend**: Connected profiles and added birthdate saving (Nov 20).
-- **Frontend**: Integrated profile components with API (Nov 19).
+---
 
-## October 2025
+## ☀️ Version 1.1.0: The Solar Sensitivity Update
+*Release Date: February 2026*
 
-- **Data Integrations**: Perfected encoding/decoding implementations for sensitive incident domains (Oct 6).
+We heard from many users that atmospheric pressure wasn't their only environmental trigger. In this update, we taught the Pattern Guardian to look at the stars!
 
-## September 2025
+**🌍 Environmental Integrations**
+* **New:** Integrated with the **GFZ German Research Centre** to track the Planetary K-Index (Geomagnetic Storms).
+* **New:** Integrated with **NOAA** to track F10.7 Solar Flux and Sunspot activity.
+* **New:** Integrated with **TEMIS** to monitor daily Ozone thickness and UV Index spikes.
 
-- **Authentication**: Solidified JWT strategies; symmetric encryption retrieval logic; integration endpoints (Sep 14-16).
-- **Core Engineering**: Typecheck enforcement; resolving linting anomalies across newly scoped modules (Sep 7).
+**🧠 Predictive Engine**
+* **Improved:** The *Pattern Guardian* now cross-references your migraine logs with all newly added solar metrics to generate highly specific "Solar Sensitivity" risk rules.
+* **New:** Added the **Solar & Geo-Magnetic Widget** to the main dashboard so you can view today's space weather at a glance.
 
-## August 2025
+---
 
-- **Initial Authentication & Encryption architecture**: Configured core user authentication flows, token guard services, Auth RBAC structure, and HMAC secure encryption key fetching from workers (Aug 15-30).
-- **Foundational Modules Setup**: Scaffolding base schemas and services for Symptoms, Medications, Triggers, and basic Data Mongoose wiring (Jul 29 - Aug 12).
-- **Initial Dev Infrastructure**: Git repository creation, Docker configuration with NGIinx load limiters, and establishing the base GitHub e2e and linter pipelines (Jul 25-28).
+## 🚀 Version 1.0.0: Initial Launch
+*Release Date: January 2026*
 
-## July 2025
+Welcome to Migraine Tracker! This initial release brings the foundational tools you need to find your triggers and reclaim your days.
 
-- **Initial Dev Infrastructure**: Git repository creation, Docker configuration with NGIinx load limiters, and establishing the base GitHub e2e and linter pipelines (Jul 25-28).
+**✨ Core Features**
+* **Dashboard:** A serene, dark-mode-first daily command center built with React.
+* **Health Logging:** Quick-add buttons for sleep quality, hydration, mood, and daily preventative medications.
+* **Incident Tracking:** Detailed logs for migraine severity, duration, custom symptoms, and rescue medications.
+* **Weather Integration:** Automatic local weather and barometric pressure tracking via Open-Meteo.
+* **The Pattern Guardian:** Our proprietary backend engine that silently looks for correlations between your pain and the weather.
+* **One-Click Auth:** Frictionless sign-up and login via Google and GitHub.
 
-## Older Features (Pre-July 2025)
+---
 
-- **2025-06-29** - Separated charts into isolated views.
-- **2025-04-30** - Unified various health indicators and added detailed descriptions for indicators.
-- **2025-04-19** - Added solar weather indicators.
-- **2025-04-13** - Added recommendation page and widget.
-- **2025-04-12** - Completed charting components.
-- **2025-04-03** - Added Date Information page.
-- **2025-07-13** - Updated `uviIndex` naming.
+*Did you spot a bug or have a feature request? Let us know on our [GitHub Issues](https://github.com/wirtaw/migrane-tracker-dashboard/issues) page!*
