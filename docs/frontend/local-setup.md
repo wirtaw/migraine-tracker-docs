@@ -42,3 +42,20 @@ pnpm run dev
 ```
 
 You should see a message indicating the server is running (usually on `http://localhost:5173`). Open that URL in your browser, and you are ready to start building!
+
+## Step 4: Open-Source Constraints & Customization
+
+This repository includes promotional headers and usage limits intended for the Migraine Pulse ecosystem.
+
+### How to Remove Promotion
+To remove the Migraine Pulse banner:
+1. Open `src/context/NotificationContext.tsx`.
+2. Delete the `promoNotification` constant and the conditional rendering block inside the `NotificationProvider` return statement.
+
+### Adjusting or Removing API/Database Limits
+To lift limits on DB entries and API requests (OpenWeather, Termis, NOAA):
+1. Open `src/services/api-utils.ts`.
+2. Find the `checkUsageLimit` function.
+3. Change the logic to `return true;` immediately at the start of the function.
+
+Or `checkUsageLimit` usage from services and from `src/services/api-utils.ts`.
